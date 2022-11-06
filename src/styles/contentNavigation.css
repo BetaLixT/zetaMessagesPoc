@@ -1,0 +1,135 @@
+
+.sidenav {
+    max-height: 70%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    color: #cccccc;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 157px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #cccccc;
+    display: block;
+  }
+
+
+  .sidenav h2 {
+    visibility:hidden;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .sidenav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .sidenav li{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .sidenav .current{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+  
+  .sidenav a:hover {
+    color: #2a9d8f;
+  }
+
+  @media (max-width: 975px) {
+
+    .arrow-button
+    {
+      cursor: pointer;
+    }
+    .arrow
+    {
+      width: 1.25rem;
+      height: 1.25rem;
+      display: inline-block;
+      position: relative;
+      margin: 0 1rem;
+    }
+    .arrow span
+    {
+      top: 1rem;
+      position: absolute;
+      width: .75rem;
+      height: .1rem;
+      background-color: #efefef;
+      display: inline-block;
+      transition: all .3s ease;
+    }
+    .arrow span:first-of-type
+    {
+      left: 0;
+      transform: rotate(45deg);
+    }
+    .arrow span:last-of-type
+    {
+      right: 0;
+      transform: rotate(-45deg);
+    }
+    .arrow.active span:first-of-type
+    {
+      transform: rotate(-45deg);
+    }
+    .arrow.active span:last-of-type
+    {
+      transform: rotate(45deg);
+    }
+
+
+    .sidenav{
+      text-align: center;
+      max-height: 500px;
+      position: relative;
+      width: 100%;
+      padding-bottom: 5px;
+      margin-top: 0px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    .sidenav ul{
+      list-style-type: none;
+      margin: 0px;
+    }
+
+    .sidenav h2 {
+      visibility:visible;
+      height: auto;
+      margin: 0px 0px 9px;
+      padding: 0px;
+    }
+    
+    #sidnav-contents{
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      transition: all .3s ease;
+    }
+    #sidnav-contents.active{
+      height: 393px;
+      visibility: visible;
+      overflow-y: scroll;
+    }
+  }

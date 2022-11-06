@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        { "source": "/korea22/", "destination": "/korea22/[...]" },
+        { "source": "/korea22/:match*", "destination": "/korea22/[...]" },
+        { "source": "/birthday22/", "destination": "/birthday22/[...]" },
+        { "source": "/birthday22/:match*", "destination": "/birthday22/[...]" },
+        { "source": "/anniversary21/", "destination": "/anniversary21/[...]" },
+        { "source": "/anniversary21/:match*", "destination": "/anniversary21/[...]" },
+        { "source": "/birthday/", "destination": "/birthday/[...]" },
+        { "source": "/birthday/:match*", "destination": "/birthday/[...]" },
+        { "source": "/million/", "destination": "/million/[...]" },
+        { "source": "/million/:match*", "destination": "/million/[...]" },
+        { "source": "/", "destination": "/[...]" },
+        { "source": "/:match*", "destination": "/[...]" }
+    ]
+}

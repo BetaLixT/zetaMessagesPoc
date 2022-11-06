@@ -1,0 +1,148 @@
+.image-common-popup-background{
+    position: fixed;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.image-common-popup-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    z-index: 2001;
+    height: 70%;
+    width: 70%;
+    cursor: default;
+}
+
+/* Image message popup styles */
+
+#image-msg-popup-image-div {
+    background: rgba(255, 255, 255, 0);
+    width: 70%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#image-msg-popup-message-div{
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    color:#cccccc;
+    border-radius: 5px;
+    width: 28%;
+    margin-left: 2%;
+    padding: 30px;
+    height: 100%;
+    font-size: large;
+    overflow-y: scroll;
+}
+#image-msg-popup-author-div{
+    width: 28%;
+    margin-left: 2%;
+    height: 10%;
+    font-size: large;
+    text-align: center;
+}
+#image-msg-popup-author-div-padding{
+    height: 20%;
+}
+#image-msg-popup-author-div-inner{
+    visibility: hidden;
+    background: #2a9d8f;
+    color: #cccccc;
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+    height: 80%;
+    overflow-y: hidden;
+}
+
+#image-msg-popup-message{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #cccccc;
+    text-align: left;
+}
+
+#image-msg-popup-author{
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.image-msg-popup-content {
+    float: left;
+}
+
+/* Image only popup styles */
+
+#image-popup-image-div {
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#image-popup-author-div{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    color:#cccccc;
+    border-radius: 5px;
+    width: 28%;
+    margin-left: 36%;
+    margin-top: 2%;
+    padding: 1%;
+    height: 8%;
+    font-size: large;
+    text-align: center;
+}
+
+.close-button {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.close-button:hover {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    color: #2a9d8f;
+}
+
+.close-button div:after{
+    display: inline-block;
+    content: "\00d7";
+    font-size: 30px;
+}
+  
+/* .mdiv {
+height: 25px;
+width: 2px;
+margin-left: 12px;
+background-color: rgb(255, 255, 255);
+transform: rotate(45deg);
+Z-index: 1;
+}
+  
+.md {
+height: 25px;
+width: 2px;
+background-color: rgb(255, 255, 255);
+transform: rotate(90deg);
+Z-index: 2;
+} */

@@ -1,0 +1,34 @@
+
+#mute-button
+{
+  z-index:88;
+}
+
+.mute-icon{
+  z-index:88;
+  margin: 0px;
+}
+
+.sound-script-loaded .muteButton
+{
+  display: inherit;
+}
+
+.bgm-is-muted .is-muted-caption{
+	display: initial;
+}
+
+.bgm-is-muted .is-unmuted-caption{
+	display: none;
+}
+.is-muted-caption{
+	display: none;
+}
+.is-unmuted-caption{
+	display: initial;
+}
+.index{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
