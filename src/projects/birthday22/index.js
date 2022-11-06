@@ -3,7 +3,7 @@ import "../../components/common"
 import * as React from "react"
 
 import Gallery from "../../components/react-photo-gallery/Gallery"
-import Message from "../../components/Message"
+import Message from "../../components/react-photo-gallery/renderers/zetaMessage.js"
 
 import BackgroundImage from "../../images/dot-orange.png"
 import messagesData from "../../../content/birthday22/data/messages.json"
